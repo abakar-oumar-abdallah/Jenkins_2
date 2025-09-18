@@ -3,20 +3,17 @@ pipeline {
 
     stages {
 
-        stage("Test") {
+        stage("Build") {
             steps {
-                echo "Tester le projet pour voir la section Post ce qui va nous donner"
-
+                echo "Construire le projet"
             }
         }
-    }
 
-    post {
-        always {
-            echo "Cette étape est toujours exécuté"
+        stage("Test") {
+            steps {
+                echo "Tester le projet"
+            }
         }
-        success {
-            echo "Cette étae est exécuté en cas des succès"
-        }
+
     }
 }
