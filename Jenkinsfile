@@ -6,6 +6,7 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Construire le projet"
+                sh 'make build'
             }
         }
 
