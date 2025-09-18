@@ -9,15 +9,14 @@ pipeline {
 
             }
         }
+    }
 
-        post {
-            always {
-                echo "Cette étape sera toujours exécuté"
-            }
-            success {
-                echo "Cette étape sera exécuté en cas de réussite"
-            }
+    post {
+        always {
+            echo "Cette étape est toujours exécuté"
         }
-
+        success {
+            echo "Cette étae est exécuté en cas des succès"
+        }
     }
 }
