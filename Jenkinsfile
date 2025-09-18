@@ -4,6 +4,10 @@ pipeline {
     stages {
 
         stage("Build") {
+            options {
+                timeout(time: 1, unit: 'HOURS')
+                timestamps()
+            }
             steps {
                 echo "Construire le projet"
                 sh 'make build'
