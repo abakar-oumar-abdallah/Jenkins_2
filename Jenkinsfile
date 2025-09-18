@@ -10,7 +10,6 @@ pipeline {
             }
             steps {
                 echo "Construire le projet"
-                sh 'make build'
             }
         }
 
