@@ -16,4 +16,13 @@ pipeline {
         }
 
     }
+
+    post {
+        alwawys {
+            echo "Cette étape est toujours exécuté"
+        }
+        success {
+            echo "Cette étape est exécuté en cas des succès"
+        }
+    }
 }
