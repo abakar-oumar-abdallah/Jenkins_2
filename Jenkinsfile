@@ -18,7 +18,7 @@ pipeline {
     }
 
     post {
-        alwawys {
+        always {
             echo "Cette étape est toujours exécuté"
         }
         success {
