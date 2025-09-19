@@ -30,7 +30,7 @@ pipeline {
             echo "Cette étape est toujours exécuté"
         }
         success {
-            echo "Cette étape est exécuté en cas des succès"
+            echo "Cette étape est exécuté en cas du succès"
         }
         failure {
             echo "Cette étape est exécuté en cas d'échec"
