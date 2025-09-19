@@ -18,7 +18,7 @@ pipeline {
                 echo "Biographie ${BIOGRAPHIE}"
                 echo "Toggle ${TOGGLE}"
                 echo "Choix ${CHOIX}"
-                echo "Mod de passe ${MOT_DE_PASSE}"
+                echo 'Mot de passe ${MOT_DE_PASSE}'
             }
 
         }
