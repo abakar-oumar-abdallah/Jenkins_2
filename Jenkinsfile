@@ -1,6 +1,10 @@
 pipeline {
     agent any 
 
+    triggers {
+        cron('H */4 * * 1-5')
+    }
+
     parameters {
         string(name: "PERSONNE", defaultValue:"M. ABAKAR", description: "A qui devrais-je dire bonjour ?")
         text(name: "BIOGRAPHIE", defaultValue: "", description: "Entrez des informations sur la personne")
