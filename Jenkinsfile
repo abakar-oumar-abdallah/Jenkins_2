@@ -12,6 +12,7 @@ pipeline {
     //     choice(name: "CHOIX", choices: ["Un", "Deux", "Trois"], description: "Faites un chooix")
     //     password(name: "MOT_DE_PASSE", defaultValue: "SECRET", description: "Entrez un mot de passe")
     // }
+    // J'ajoute une commentaire pour voir la différence.
 
     stages {
 
